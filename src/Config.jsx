@@ -1,0 +1,57 @@
+
+const Config = {
+  MAX_DISTINC : 35,
+	AREAX : 1000,
+	AREAY : 740, 
+	COLORS_APPROACH : "fix", // fix, random, gradient
+	AREA_TITLE: "PeaceAgreements.org",
+  PARAM1 : "Agtp",
+  PARAM2 : "Stage",
+  START_TYPE_AREA:"PA-Detailed",
+  TYPE_AREA:[{name:"PA-Detailed",value:"PA-Detailed"},{name:"PA-Simple",value:"PA-Simple"},{name:"CF-Detailed",value:"CF-Detailed"},{name:"CF-Simple",value:"CF-Simple"}],
+  DESCRIPTION:{
+    "PA-Detailed":"PA: showing all Peace Agreements (Detailed view with 65536 possible diagrams)",
+    "PA-Simple":"PAsim: showing all Peace Agreements (simple view with 36 possible diagrams)",
+    "CF-Detailed":"CF: showing all Ceasefire agreements (Detailed view with 65536 possible diagrams)",
+    "CF-Simple":"CFsim: showing all Ceasefire agreements (simple view with 36 possible diagrams)",
+  },  
+  colorList:[
+    "#CC5151",
+    "#51CCCC",
+    "#8ECC51",
+    "#8E51CC",
+    "#CCAD51",
+    "#51CC70",
+    "#5170CC",
+    "#CC51AD",
+    "#CC7F51",
+    "#BCCC51",
+    "#60CC51",
+    "#51CC9E",
+    "#519ECC",
+    "#6051CC",
+    "#BC51CC",
+    "#9E1452",
+    "#CFA2B0",
+    "#CC9651",
+    "#4BEC4E",
+    "#E8FA14",
+    "#1170DD",
+    "#E8B080",
+    "#694C33",
+    "#D8A0CD",
+    "#803D73",
+    "#DA8E95",
+    "#831E27",
+    "#A7B6BC",
+    "#143E4D",
+    "#9CF69C",
+    "#267826",
+    "#D3E19B",
+    "#646D40",
+    "#757575"
+  ],
+  SEPARATOR_FOR_ARBITRARY_SORTING_VALUES:"##"
+}
+
+export default Config;

@@ -1,0 +1,366 @@
+body{
+  background-color:rgb(23, 23, 23);
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Area{
+  font-family: sans-serif;
+  text-align: center;
+  width: 1100px;
+  color:white;
+  padding: 2%;
+
+}
+.titleGroupNumbers{
+  color: #818080;
+}
+.titleGroups{
+  margin-bottom:4px;
+}
+.strongText{
+  font-weight: bold !important;
+}
+
+.filterArea{
+  position:relative;
+  width: 96%;
+  height: auto;
+  display: flex;
+}
+
+.filterAreaSearch{
+  position:relative;
+  width: 96%;
+  height: auto;
+  display: flex;
+  border-bottom: white 1px solid;
+  border-top: white 1px solid;
+  padding:3px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.descriptionArea{
+  position:relative;
+  width: 96%;
+  height: auto;
+  display: flex;
+  color:#f15f5f;
+  border-bottom: white 1px solid;
+  padding:3px;
+  margin-bottom:10px;
+}
+
+.vizArea{
+  position:relative;
+  width: 100%;
+  height:flex;
+}
+
+.AreaGroups {
+  
+}
+
+.group{
+  position:relative;
+  float:left;
+  /*border: 1px solid black;*/
+	border-left: 1px solid rgb(23,23,23);
+  border-bottom: 0px solid grey;
+}
+
+rect {
+	cursor:pointer;
+}
+
+.filterSelect{
+  position: relative;
+  width: 50%;
+  height: auto;
+  float: left;
+  text-align: left;
+}
+
+.groups{
+  position: relative;
+  left:0px;
+  width:1000px;
+  height:auto;
+  clear: both;
+}
+
+.selectSimple{
+  width:330px;
+  height: 35px;
+  margin-bottom:8px;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+.lineBlock{
+  stroke:rgb(0,0,0);
+  stroke-width:1;
+}
+
+.lineBlockCross{
+  stroke:rgb(30,30,30);
+  /*stroke:rgb(255,255,255);*/
+  stroke-width:1;
+}
+
+.selectDescription{
+  clear: both;
+  position:absolute;
+  left:345px;
+  top:10px;
+}
+
+.filterForInput{
+  position: relative;
+  text-align: left;
+  float:left;
+  
+}
+.inputFilterForm{
+  margin-left: -2px;
+}
+.inputFilterForm > input[type=submit]{
+  cursor: pointer;
+}
+
+.filterSelectProperties{
+  float: left;
+  border:1px solid #ffffff;
+  padding: 2px;
+  margin: 2px;
+  height: auto;
+}
+.filterSelectTitle{
+  clear: both;
+  text-align: left;
+  padding: 2px;
+  margin: 2px;
+}
+
+.detailInfo{
+  margin-left: 5px;
+  margin-top:3px;
+}
+
+.sideRightColumn{
+  position: relative;
+  width:cacl(1100px-800px);
+}
+
+a{
+  color: white;
+  padding: 2px;
+  border: solid 1px;
+  text-decoration: none;
+}
+form{
+ 
+}
+
+.typeAreaSelect{
+  position: relative;
+  display:block;
+  width:96%;
+  height:40px;
+}
+
+.typeAreaBtSelect{
+  position: relative;
+  float: left;
+  border:solid 1px white;
+  padding: 4px;
+  margin:2px; 
+  cursor: pointer;
+}
+
+.typeAreaBtSelected{
+  background-color: grey;
+}
+
+/* design dropmenu */
+.react-dropdown-tree-select {
+  text-align: left;
+  padding: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width:calc(100%-4px);
+  margin:2px;
+  width:auto;
+  height: flex;
+  border:1px solid #818080;
+}
+
+.tag-item{
+  color: black;
+  max-width: 285px;
+}
+
+.dropdown-content{
+  position: relative;
+  background-color: rgb(60, 60, 60);
+  padding: 15px;
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: auto;
+}
+
+.dropdown-trigger{
+  padding: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+}
+
+.tag{
+  font-size: 15px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.searchContainer{
+  position: relative;
+  top:-1px;
+}
+
+.search{
+  height: 17px;
+}
+
+.dropdownCloseButton{
+  position: sticky;
+  top:0px;
+  left:490px;
+  height: 0px;
+  width:20px;
+  z-index: 100;
+}
+.imgDropdownCloseButton{
+  width:20px;
+  height:20px;
+  cursor: pointer;
+}
+
+.toggle.collapsed:after {
+  content: "+";
+}
+
+.toggle.expanded:after {
+  content: "-";
+}
+.toggle:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+.block:hover > rect {
+  fill: white;
+  animation-name: color;
+  animation-duration: 6.75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    fill: #222;
+  }
+  50% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+
+.popupbox{
+  margin-left:-32px;
+}
+
+.popupbox-titleBar{
+  color:black;
+}
+
+.popupbox-content{
+  color:black;
+  text-align: left;
+  max-height:650px;
+  max-width:900px;
+  overflow: hidden;
+  overflow-y: scroll;
+  /*scrollbar-width: auto !important;*/
+  line-height: 130%;
+  scrollbar-width: thin;
+}
+
+.popupbox-content::-webkit-scrollbar:vertical {
+  width: 5px !important;
+}
+
+.popupbox-content::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.header_title{
+  
+  padding: 3px;
+  padding-top: 6px;
+  margin-bottom:5px;
+  padding-bottom: 10px;  
+  border-bottom:1px solid #000; 
+  
+  background-image: linear-gradient(#ffffff, #fa8787); background-color: #eeeded;
+  /*color:white;
+  background-color: rgb(73, 73, 73);*/
+}
+
+.header{
+  margin-bottom:10px;
+  padding-bottom: 3px;
+  border-bottom: solid #bdbaba 1px;
+}
+
+.buttonWithOutBorder{ 
+  padding: 2px;
+  margin-right:5px;
+}
+
+.button{ 
+  border: solid #000 1px;
+  padding: 2px;
+  margin-right:5px;
+}
+.linkPDFDocument{
+  color: #000;
+  text-decoration: none;
+  border:none;
+}
+.linkPDFDocument:hover{
+  color: #000;
+  text-decoration: underline;
+  border:none;
+}
+.button > a{
+  color:#000;
+  border:none;
+}
+.leftText{
+  text-align: left;
+}
+.textNoExist{
+  padding: 4px;
+  padding-top: 7px;
+  
+}

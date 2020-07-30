@@ -1,0 +1,8 @@
+[
+    { "value": "Reg", "label": "Region" },
+    { "value": "Stage", "label": "Agreement stage" },
+    { "value": "Year", "label": "Year Signed" },
+    { "value": "Agtp", "label": "Agreement-conflict" },
+    { "value": "StGen", "label": "Conflict nature" },
+    { "value": "Status", "label": "Agreement Definition and Status" }
+]
